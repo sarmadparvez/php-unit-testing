@@ -13,7 +13,7 @@ composer install
 
 Also make sure Xdebug php extension is installed. This is neceassary for generating code coverage.
 
-## Running the tests
+## Running the tests and generating code coverage
 
 Copy the unit tests, phpunit.xml and bootstrap.php from tests/php/ folder to tests/php/ folder inside plugin skeleton. The phpunit.xml is configured to generate the code coverage for RTGSync. For other plugins the whitelist files and directories needs to be changed appropriately in phpunit.xml.
 
