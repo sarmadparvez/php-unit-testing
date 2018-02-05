@@ -1,0 +1,71 @@
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd"
+        backupGlobals="true"
+        backupStaticAttributes="false"
+        bootstrap="bootstrap.php">
+        cacheTokens="false"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        mapTestClassNameToCoveredClassName="false"
+        processIsolation="false"
+        stopOnError="false"
+        stopOnFailure="false"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+        stopOnRisky="false"
+        testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+        timeoutForSmallTests="1"
+        timeoutForMediumTests="10"
+        timeoutForLargeTests="60"
+        verbose="false">
+
+    <testsuites>
+
+        <testsuite name="Skeleton">
+            <directory>./skeleton/</directory>
+        </testsuite>
+
+        <testsuite name="Plugin">
+            <directory>./plugin/</directory>
+        </testsuite>
+
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../../custom/include/CacheEmails/</directory>
+            <directory suffix=".php">../../custom/include/rt_GSync/</directory>
+            <directory suffix=".php">../../custom/include/Google/</directory>
+            <directory suffix=".php">../Extension/modules/Schedulers/Ext/ScheduledTasks/</directory>
+            <directory suffix=".php">../../custom/modules/rt_GSync/</directory>
+            <directory suffix=".php">../../custom/include/sampleclasses/</directory>
+            <file>../../custom/modules/Users/GoogleOauth.php</file>
+            <file>../../modules/rt_GSync/GSyncHook.php</file>
+            <file>../../custom/clients/base/api/rt_GSyncCustomApi.php</file>
+            <exclude>
+                <file>../../custom/include/rt_GSync/license/config.php</file>
+                <directory>../../custom/include/rt_GSync/license/language/</directory>
+                <directory>../../custom/include/Google/lib/</directory>
+                <directory>../../custom/include/Google/google-api-php-client/</directory>
+                <directory>../custom/modules/*/clients/base/fields/</directory>
+                <directory>../custom/modules/*/clients/base/filters/</directory>
+                <directory>../custom/modules/*/clients/base/layouts/</directory>
+                <directory>../custom/modules/*/clients/base/menus/</directory>
+                <directory>../custom/modules/*/clients/base/views/</directory>
+                <directory>../custom/modules/*/clients/mobile/</directory>
+                <directory>../custom/modules/*/clients/portal/</directory>
+                <directory>../custom/modules/*/Activities/</directory>
+                <directory>../custom/modules/*/Comments/</directory>
+                <directory>../custom/modules/*/Subscriptions/</directory>
+                <directory>../custom/modules/*/Ext/</directory>
+                <directory>../custom/modules/*/menus/</directory>
+                <directory>../custom/modules/*/metadata/</directory>
+                <directory>../custom/modules/*/authentication/</directory>
+                <directory>../custom/modules/*/tpls/</directory>
+                <directory>../custom/modules/*/views/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
