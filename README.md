@@ -15,7 +15,7 @@ Also make sure Xdebug php extension is installed. This is neceassary for generat
 
 ## Running the tests
 
-Copy the unit tests, phpunit.xml and bootstrap.php from tests/php/ folder to tests/php/ folder inside plugin skeleton. The phpunit.xml is configured to generate the code coverage for RTGSync. For other plugins the whitelist files and directories needs to be changed appropriately.
+Copy the unit tests, phpunit.xml and bootstrap.php from tests/php/ folder to tests/php/ folder inside plugin skeleton. The phpunit.xml is configured to generate the code coverage for RTGSync. For other plugins the whitelist files and directories needs to be changed appropriately in phpunit.xml.
 
 Once the plugin is installed and tests are deployed inside SugarCRM tests folder. Use Following commands to run the tests and generate code coverage respectively.
 
