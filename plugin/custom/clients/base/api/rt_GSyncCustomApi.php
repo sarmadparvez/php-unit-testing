@@ -71,8 +71,8 @@ class rt_GSyncCustomApi extends SugarApi
     */
     public function getSugarVersion($api, $args)
     {
-    	$sugar_version = $this->getSugarConfig()->get('sugar_version');
-    	return $sugar_version;
+        $sugar_version = $this->getSugarConfig()->get('sugar_version');
+        return $sugar_version;
     }
 
     /**

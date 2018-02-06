@@ -6,19 +6,19 @@
 trait RTGSyncHelper
 {
 
-	/**
-	* @codeCoverageIgnore
-	*/
-	protected function getSugarConfig()
-	{
-		return SugarConfig::getInstance();
-	}
+    /**
+    * @codeCoverageIgnore
+    */
+    protected function getSugarConfig()
+    {
+        return SugarConfig::getInstance();
+    }
 
-	/**
-	* @codeCoverageIgnore
-	*/
-	protected function getSugarQuery()
-	{
-		return new SugarQuery();
-	}
+    /**
+    * @codeCoverageIgnore
+    */
+    protected function getSugarQuery()
+    {
+        return new SugarQuery();
+    }
 }
