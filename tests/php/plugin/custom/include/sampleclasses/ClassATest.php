@@ -29,7 +29,6 @@ class ClassATest extends Rt_PHPUnit_Framework_TestCase
     {
         global $db;
         $db->query("DELETE FROM contacts WHERE id  = '1'");
-        //unset($GLOBALS['db']);
         parent::tearDown();
     }
 }
