@@ -101,8 +101,8 @@ class ClassBTest extends RT_PHPUnit_Framework_TestCase
     		->getMock();
     	$sugar_query_mock->expects($this->once())->method('execute')->will($this->returnValue($result));
 		$obj->expects($this->once())->method('getSugarQuery')->will($this->returnValue($sugar_query_mock));
-		$this->callProtectedMethod($obj, 'getDataFromDbForB');
-		$this->assertEquals($expected, $result);
+		$data = $this->callProtectedMethod($obj, 'getDataFromDbForB');
+		$this->assertEquals($expected, $data);
 		
 	}
 
