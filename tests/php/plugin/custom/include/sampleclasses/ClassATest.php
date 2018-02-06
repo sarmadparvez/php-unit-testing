@@ -12,10 +12,8 @@ class ClassATest extends Rt_PHPUnit_Framework_TestCase
     */
     public function setUp()
 	{
-		//initialize database
-		$GLOBALS['db'] = DBManagerFactory::getInstance();
-
-		$GLOBALS['db']->query(
+		global $db;
+		$db->query(
             "Replace INTO `contacts` (id, title) VALUES('1', 'Sales Manager')"
         );
 		parent::setUp();
@@ -29,8 +27,9 @@ class ClassATest extends Rt_PHPUnit_Framework_TestCase
 	
     public function tearDown()
     {
-        $GLOBALS['db']->query("DELETE FROM contacts WHERE id  = '1'");
-        unset($GLOBALS['db']);
+    	global $db;
+        $db->query("DELETE FROM contacts WHERE id  = '1'");
+        //unset($GLOBALS['db']);
         parent::tearDown();
     }
 }

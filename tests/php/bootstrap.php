@@ -34,7 +34,7 @@ require_once 'include/utils/layout_utils.php';
 
 chdir(sugar_root_dir());
 
-
+$GLOBALS['db'] = DBManagerFactory::getInstance();
 $current_language = $sugar_config['default_language'];
 // disable the SugarLogger
 $sugar_config['logger']['level'] = 'fatal';
