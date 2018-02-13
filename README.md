@@ -4,7 +4,7 @@ This branch prvoides some examples for getting started with php unit testing ins
 
 ### Prerequisites
 
-Make sure the composer is installed in the target SugarCRM. In order to install the composer run the following commands
+Make sure the composer (dependency management tool for PHP) is installed in your operating system. Then you need to install dependencies using composer in the target SugarCRM. In order to install the dependencies using composer run the following commands
 
 ```
 cd <SugarCRM directory>
