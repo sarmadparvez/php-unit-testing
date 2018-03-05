@@ -1,6 +1,6 @@
 # php-unit-testing
 
-This branch prvoides some examples for getting started with php unit testing for Rolustech Plugins using plugin skeleton.
+This branch provides some examples for getting started with php unit testing for Rolustech Plugins using plugin skeleton.
 
 ### Prerequisites
 
