@@ -1,6 +1,6 @@
 # php-unit-testing
 
-This branch prvoides some examples for getting started with php unit testing inside SugarCRM.
+This branch provides some examples for getting started with php unit testing inside SugarCRM.
 
 ### Prerequisites
 
