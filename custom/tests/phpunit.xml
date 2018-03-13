@@ -53,6 +53,7 @@
                     <directory>../modules/*/authentication/</directory>
                     <directory>../modules/*/tpls/</directory>
                     <directory>../modules/*/views/</directory>
+                    <directory suffix="logic_hooks.php">../modules/*</directory>
                     <file>../modules/unified_search_modules_display.php</file>
                 </exclude>
             </whitelist>
